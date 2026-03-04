@@ -1,0 +1,7 @@
+streamlit
+langchain
+langchain-openai
+langchain-groq
+langchain-chroma
+pdfplumber
+python-dotenv
