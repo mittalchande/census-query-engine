@@ -27,7 +27,10 @@ llm = ChatGroq(
     model_name="llama-3.1-8b-instant",
     temperature=0.1 # Low temperature for factual census data
 )
-embeddings = OpenAIEmbeddings()
+
+@st.cache_resource
+def get_embeddings():
+    return OpenAIEmbeddings()
 
 # 2. Vector Store Management (Cached for Speed)
 @st.cache_resource 
@@ -36,6 +39,7 @@ def get_vectorstore():
     
     # Load existing database if it exists to skip re-indexing
     if os.path.exists(persist_dir) and os.listdir(persist_dir):
+        embeddings = get_embeddings()
         return Chroma(persist_directory=persist_dir, embedding_function=embeddings)
 
     # First-time indexing logic

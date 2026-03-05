@@ -4,4 +4,4 @@ chroma_db_simple/
 chroma_db*/
 __pycache__/
 .streamlit/
-data*/
+data/
