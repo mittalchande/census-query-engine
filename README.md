@@ -1,5 +1,14 @@
 # CensusInsight AI — RAG-Powered Census Data Explorer
 
+<div align="center">
+  <h3>📺 Project Demo</h3>
+  <a href="https://www.loom.com/share/04bb98b9676744878bc63823df403b8e">
+    <img src="https://cdn.loom.com/sessions/thumbnails/04bb98b9676744878bc63823df403b8e-44be78ef2147f7c3-full-play.gif" alt="CensusInsight AI Demo" style="width:100%; max-width:600px; border-radius: 10px;">
+  </a>
+  <p><i>Click the image above to watch the full demo on Loom</i></p>
+</div>
+
+
 > **Portfolio Project** | LangChain · Groq · ChromaDB · Streamlit  
 > Demonstrates production-ready Retrieval-Augmented Generation (RAG) using the LangChain Expression Language (LCEL) pipeline.
 
@@ -131,7 +140,7 @@ chromadb
 Groq's LPU hardware delivers ~10x faster inference than standard GPU APIs. For a chat interface, this means responses feel instantaneous. The `llama-3.1-8b-instant` model is also free-tier friendly, making this project easy to run without cost.
 
 **Why OpenAI for embeddings but Groq for inference?**  
-`text-embedding-ada-002` produces high-quality semantic embeddings that ChromaDB indexes once and persists. At query time, only a tiny embedding call is needed — the heavy lifting is done by Groq's fast inference.
+`text-embedding-ada-002` produces high-quality semantic embeddings that ChromaDB indexes once and persists. At query time, only a tiny embedding call is needed, the heavy lifting is done by Groq's fast inference.
 
 **Why `chunk_size=1000` with `overlap=200`?**  
 Census documents are dense with statistics. A 1000-token chunk captures a full statistical table or paragraph. The 200-token overlap ensures context isn't lost at chunk boundaries (e.g., a table header won't be separated from its rows).
