@@ -1,5 +1,14 @@
 # CensusInsight AI — RAG-Powered Census Data Explorer
 
+<div align="center">
+  <h3>📺 Project Demo</h3>
+  <a href="https://www.loom.com/share/04bb98b9676744878bc63823df403b8e">
+    <img src="https://cdn.loom.com/sessions/thumbnails/04bb98b9676744878bc63823df403b8e-44be78ef2147f7c3-full-play.gif" alt="CensusInsight AI Demo" style="width:100%; max-width:600px; border-radius: 10px;">
+  </a>
+  <p><i>Click the image above to watch the full demo on Loom</i></p>
+</div>
+
+
 > **Portfolio Project** | LangChain · Groq · ChromaDB · Streamlit  
 > Demonstrates production-ready Retrieval-Augmented Generation (RAG) using the LangChain Expression Language (LCEL) pipeline.
 
