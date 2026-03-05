@@ -1,7 +1,8 @@
 streamlit
 langchain
+langchain-community
 langchain-openai
 langchain-groq
 langchain-chroma
-pdfplumber
+pypdf
 python-dotenv
